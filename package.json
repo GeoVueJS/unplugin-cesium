@@ -4,13 +4,13 @@
   "version": "3.0.0",
   "description": "Quickly integrate CesiumJS into various bundlers",
   "license": "MIT",
-  "homepage": "https://github.com/xiankq/unplugin-cesium#readme",
+  "homepage": "https://github.com/vesiumjs/unplugin-cesium#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xiankq/unplugin-cesium.git"
+    "url": "git+https://github.com/vesiumjs/unplugin-cesium.git"
   },
   "bugs": {
-    "url": "https://github.com/xiankq/unplugin-cesium/issues"
+    "url": "https://github.com/vesiumjs/unplugin-cesium/issues"
   },
   "keywords": [
     "cesium",
