@@ -2,7 +2,7 @@ export interface UnpluginCesiumOptions {
   /**
    * This is the base URL for static files that CesiumJS needs to load.
    * If you have configured a CDN URL for these static files, you can also directly specify the CDN URL and set `copyStaticFiles` to `false`.
-   * @default '/cesiumStatic'
+   * @default 'cesiumStatic'
    */
   cesiumBaseUrl?: string
 
