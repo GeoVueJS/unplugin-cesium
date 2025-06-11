@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "cesium": "^1.129.0"
+    "cesium": "^1.130.0"
   },
   "devDependencies": {
     "@rsbuild/core": "^1.3.22",
