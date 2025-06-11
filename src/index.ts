@@ -48,12 +48,14 @@ export const unpluginFactory: UnpluginFactory<UnpluginCesiumOptions | undefined,
           id: /\.js/,
           code: 'CESIUM_BASE_URL',
         },
-        handler(code) {
-          const s = new MagicString(code)
-          s.appendLeft(0, `var CESIUM_BASE_URL="${CESIUM_BASE_URL}";\n`)
-          return {
-            code: s.toString(),
-            map: s.generateMap({ includeContent: true, hires: true }),
+        handler(code, id) {
+          if (/\.js/.test(id) && code.includes('CESIUM_BASE_URL')) {
+            const s = new MagicString(code)
+            s.appendLeft(0, `var CESIUM_BASE_URL="${CESIUM_BASE_URL}";\n`)
+            return {
+              code: s.toString(),
+              map: s.generateMap({ includeContent: true, hires: true }),
+            }
           }
         },
       },
